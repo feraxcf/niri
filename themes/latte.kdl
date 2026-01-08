@@ -1,0 +1,12 @@
+overview {
+    backdrop-color "#dce0e8" // crust
+}
+
+layout {
+    background-color "#e6e9ef" // mantle
+    border {
+        on
+        active-color "#dc8a78" // rosewater
+        inactive-color "#acb0be" // surface2
+    }
+}

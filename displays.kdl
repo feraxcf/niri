@@ -1,0 +1,17 @@
+// Desktop display (32' DISPLAY)
+output "LG Electronics LG FULL HD 0x01010101" { 
+    mode "1920x1080@74.973"
+    scale 1
+    transform "normal"
+    position x=0 y=0
+    focus-at-startup
+    // backdrop-color "#aa0000"
+    
+    hot-corners {
+        // off
+        top-left
+        // top-right
+        // bottom-left
+        // bottom-right
+    }
+}
