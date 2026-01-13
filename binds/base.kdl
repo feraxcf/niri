@@ -1,3 +1,24 @@
+input {
+    touchpad {
+        // Activa el clic con un toque suave
+        tap
+        
+        // Clic con dos dedos = clic derecho (estilo moderno)
+        tap-button-map "left-right-middle"
+        
+        // Scroll natural (hacia arriba para bajar)
+        natural-scroll
+        
+        // Aceleración y velocidad
+        // Velocidad de 0.0 a 1.0 (o incluso negativo para más lento)
+        accel-speed 0.2 
+        accel-profile "adaptive"
+        
+        // Desactiva el trackpad mientras se escribe
+        dwt
+    }
+}
+
 binds {
     // Keys consist of modifiers separated by + signs, followed by an XKB key name
     // in the end. To find an XKB name for a particular key, you may use a program
