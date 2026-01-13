@@ -1,5 +1,6 @@
 overview {
-    backdrop-color "#11111b" // crust
+    // backdrop-color "#11111b" // crust
+    backdrop-color "transparent" // noctalia blur
 }
 
 layout {

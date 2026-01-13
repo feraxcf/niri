@@ -2,3 +2,9 @@ window-rule {
     match app-id="com.github.th_ch.youtube_music"
     default-column-width { fixed 460; }
 }
+
+window-rule {
+    match app-id=".*zen_browser.*" title=".*Bitwarden.*"
+    open-floating true
+    // default-column-width { fixed 460; }
+}

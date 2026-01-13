@@ -3,6 +3,8 @@ prefer-no-csd
 
 // startup commands
 // spawn-at-startup "waybar"
+spawn-at-startup "qs" "-c" "noctalia-shell"
+spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
 spawn-sh-at-startup "alsactl restore headset -f /home/feraxhp/.config/alsa/audio.inf"
 
 // paths
@@ -64,3 +66,12 @@ layout {
     }
 }
 
+debug {
+  // Allows notification actions and window activation from Noctalia.
+  honor-xdg-activation-with-invalid-serial
+}
+
+layer-rule {
+  match namespace="^noctalia-overview*"
+  place-within-backdrop true
+}
