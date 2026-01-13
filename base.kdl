@@ -40,7 +40,7 @@ layout {
     // default-column-display "tabbed"
     // background-color "#003300"
     
-    default-column-width { proportion 0.5; }
+    default-column-width { proportion 0.66667; }
     
     preset-column-widths {
         proportion 0.33333

@@ -10,6 +10,10 @@ include "windows.kdl"
 // themes
 include "theme.kdl"
 
+// animations
+include "animations.kdl"
+
 // binds
 include "binds/base.kdl"
 include "binds/noctalia.kdl"
+include "binds/self.kdl"

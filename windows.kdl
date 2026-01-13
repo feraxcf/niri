@@ -4,7 +4,7 @@ window-rule {
 }
 
 window-rule {
-    match app-id=".*zen_browser.*" title=".*Bitwarden.*"
-    open-floating true
-    // default-column-width { fixed 460; }
+    match app-id=r#".*zen_browser.*"#
+    open-floating false
+    default-column-width { proportion 0.66667; }
 }

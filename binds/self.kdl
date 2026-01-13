@@ -1,0 +1,6 @@
+binds {
+    Mod+Space hotkey-overlay-title="launcher" { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
+    Ctrl+Period hotkey-overlay-title="zed" { spawn "zed"; }
+    Ctrl+Comma hotkey-overlay-title="zen" { spawn "flatpak" "run" "app.zen_browser.zen"; }
+    
+}
