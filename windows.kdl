@@ -1,5 +1,6 @@
-window-rule {
+window-rule { // Confortable mobile factor
     match app-id="com.github.th_ch.youtube_music"
+    match app-id="org.telegram.desktop"
     default-column-width { fixed 460; }
 }
 
