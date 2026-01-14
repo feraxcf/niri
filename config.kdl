@@ -7,6 +7,9 @@ include "displays.kdl"
 // windows
 include "windows.kdl"
 
+// events
+include "events.kdl"
+
 // themes
 include "theme.kdl"
 

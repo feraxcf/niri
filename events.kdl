@@ -1,0 +1,4 @@
+switch-events {
+    lid-close { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "sessionMenu" "lockAndSuspend"; }
+    // lid-open { spawn "notify-send" "The laptop lid is open!"; }
+}
