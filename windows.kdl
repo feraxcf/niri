@@ -9,3 +9,16 @@ window-rule {
     open-floating false
     default-column-width { proportion 0.66667; }
 }
+
+window-rule { // transparent window
+    match app-id="Hoppscotch-agent"
+    open-floating true
+    open-focused false
+    opacity 0.000
+    
+    border {
+        on
+        active-color "transparent"
+        inactive-color "transparent"
+    }
+}
