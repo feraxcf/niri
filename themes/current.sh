@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
 config="$HOME/.config/noctalia/settings.json"
-current=$(cat $config | jq ".colorSchemes.darkMode")
+current=$(jq ".colorSchemes.darkMode" < $config)
 "$HOME/.config/niri/themes/toggle.sh" "$current"
