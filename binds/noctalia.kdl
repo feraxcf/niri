@@ -3,4 +3,5 @@ binds {
     
     Mod+V { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "clipboard"; }
     Mod+L { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "lockScreen" "lock"; }
+    Mod+Period { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "emoji"; }
 }

@@ -5,7 +5,8 @@ prefer-no-csd
 // spawn-at-startup "waybar"
 spawn-at-startup "qs" "-c" "noctalia-shell"
 spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
-spawn-sh-at-startup "alsactl restore headset -f /home/feraxhp/.config/alsa/audio.inf"
+spawn-sh-at-startup "$HOME/.config/niri/themes/current.sh"
+spawn-sh-at-startup "alsactl restore headset -f $HOME/.config/alsa/audio.inf"
 
 // paths
 screenshot-path "~/images/screenshots/sst_%Y_%m_%d@%H:%M:%S.png"
