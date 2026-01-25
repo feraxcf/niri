@@ -7,7 +7,7 @@ window-rule { // Confortable mobile factor
 window-rule {
     match app-id=r#".*zen_browser.*"#
     open-floating false
-    default-column-width { proportion 0.66667; }
+    default-column-width { proportion 1.0; }
 }
 
 window-rule { // transparent window

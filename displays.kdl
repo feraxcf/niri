@@ -15,10 +15,4 @@ output "LG Electronics LG FULL HD 0x01010101" {
         // bottom-right
     }
     
-    layout {
-        struts {
-            left 30
-            right 30
-        }
-    }
 }

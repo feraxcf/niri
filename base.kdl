@@ -60,8 +60,8 @@ layout {
     // insert-hint {  } // Dont know what it is
     
     struts {
-        left 0
-        right 0
+        left 30
+        right 30
         top 0
         bottom 0
     }
