@@ -4,8 +4,12 @@ window-rule { // Confortable mobile factor
     default-column-width { fixed 460; }
 }
 
-window-rule {
+window-rule { // full screen apps
     match app-id=r#".*zen_browser.*"#
+    match app-id=r#".*zed.*"#
+    
+    exclude title="Zed — Settings"
+    
     open-floating false
     default-column-width { proportion 1.0; }
 }

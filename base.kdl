@@ -5,7 +5,7 @@ prefer-no-csd
 // spawn-at-startup "waybar"
 spawn-at-startup "qs" "-c" "noctalia-shell"
 spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
-spawn-sh-at-startup "$HOME/.config/niri/themes/current.sh"
+spawn-sh-at-startup "sleep 5 && ~/.config/niri/themes/current.sh"
 spawn-sh-at-startup "alsactl restore headset -f $HOME/.config/alsa/audio.inf"
 
 // paths
