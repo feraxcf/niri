@@ -1,6 +1,7 @@
 window-rule { // Confortable mobile factor
     match app-id="com.github.th_ch.youtube_music"
     match app-id="org.telegram.desktop"
+    match app-id="scrcpy"
     default-column-width { fixed 460; }
 }
 
@@ -16,9 +17,12 @@ window-rule { // full screen apps
 
 window-rule { // transparent window
     match app-id="Hoppscotch-agent"
+    match app-id="steam_app_default" title="^$"
+    
     open-floating true
     open-focused false
     opacity 0.000
+    default-floating-position x=0 y=0 relative-to="bottom-right"
     
     border {
         on
