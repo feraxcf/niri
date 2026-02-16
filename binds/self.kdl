@@ -4,4 +4,8 @@ binds {
     Mod+B hotkey-overlay-title="zen" { spawn "flatpak" "run" "app.zen_browser.zen"; }
     Mod+N hotkey-overlay-title="launcher" { spawn "nautilus" "-w"; }
     
+    Mod+Down      { focus-workspace-down; } // { focus-column-right; }
+    Mod+Up        { focus-workspace-up; } // { focus-column-left; }
+    Mod+Ctrl+Down { move-column-to-workspace-down; } // { move-column-right; }
+    Mod+Ctrl+Up   { move-column-to-workspace-up; } // { move-column-left; }
 }

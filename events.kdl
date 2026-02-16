@@ -1,4 +1,4 @@
 switch-events {
     lid-close { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "sessionMenu" "lockAndSuspend"; }
-    lid-open { spawn "bash" "-c" "sleep .1 && ydotool key 28"; }
+    // lid-open { spawn "bash" "-c" "sleep .1 && ydotool key 28"; }
 }
