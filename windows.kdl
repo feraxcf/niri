@@ -17,12 +17,12 @@ window-rule { // full screen apps
 
 window-rule { // transparent window
     match app-id="Hoppscotch-agent"
-    match app-id="steam_app_default" title="^$"
+    match app-id=r#"steam_app.*"# title="^$"
     
     open-floating true
     open-focused false
-    opacity 0.000
-    default-floating-position x=0 y=0 relative-to="bottom-right"
+    opacity 8.00
+    default-floating-position x=10 y=10 relative-to="top-right"
     
     border {
         on
