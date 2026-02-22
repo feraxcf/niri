@@ -1,5 +1,6 @@
 window-rule { // Confortable mobile factor
     match app-id="com.github.th_ch.youtube_music"
+    match app-id="com.seafile.seafile-applet"
     match app-id="org.telegram.desktop"
     match app-id="scrcpy"
     default-column-width { fixed 460; }
@@ -29,4 +30,20 @@ window-rule { // transparent window
         active-color "transparent"
         inactive-color "transparent"
     }
+}
+
+window-rule { // Block out from screencasts.
+    match app-id="org.telegram.desktop"
+    match title=".*Bitwarden Password Manager.*"
+    match title=".*Microsoft Teams.*"
+    match title=".*WhatsApp.*"
+    
+    block-out-from "screencast"
+}
+
+window-rule {
+    match title=".*Bitwarden.*"
+    
+    min-width 460
+    max-width 460
 }
