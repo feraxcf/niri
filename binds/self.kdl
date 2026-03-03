@@ -4,6 +4,9 @@ binds {
     Mod+B hotkey-overlay-title="zen" { spawn "flatpak" "run" "app.zen_browser.zen"; }
     Mod+N hotkey-overlay-title="launcher" { spawn "nautilus" "-w"; }
     
+    XF86Cut { screenshot; }
+    XF86Favorites hotkey-overlay-title="toggle" { spawn "~/.config/niri/scripts/toggle_screen.sh"; }
+    
     Mod+Down      { focus-workspace-down; } // { focus-column-right; }
     Mod+Up        { focus-workspace-up; } // { focus-column-left; }
     Mod+Ctrl+Down { move-column-to-workspace-down; } // { move-column-right; }

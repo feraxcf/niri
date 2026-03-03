@@ -42,7 +42,7 @@ window-rule { // Block out from screencasts.
 }
 
 window-rule {
-    match title=".*Bitwarden.*"
+    match title=".*Extension.*Bitwarden.*"
     
     min-width 460
     max-width 460
