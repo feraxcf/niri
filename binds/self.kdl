@@ -4,6 +4,7 @@ binds {
     Mod+B hotkey-overlay-title="zen" { spawn "flatpak" "run" "app.zen_browser.zen"; }
     Mod+N hotkey-overlay-title="nautilus" { spawn "nautilus" "-w"; }
     Mod+C hotkey-overlay-title="telegram" { spawn "flatpak" "run" "org.telegram.desktop"; }
+    Mod+M hotkey-overlay-title="music" { spawn-sh "pgrep youtube-music || qs -c noctalia-shell ipc call toast send '{\"title\":\"Opening youtube-music\"}'; youtube-music"; }
     
     XF86Cut { screenshot; }
     XF86Favorites hotkey-overlay-title="toggle" { spawn "~/.config/niri/scripts/toggle_screen.sh"; }
