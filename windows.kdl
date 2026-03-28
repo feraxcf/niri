@@ -29,7 +29,7 @@ window-rule { // transparent window
     
     open-floating true
     open-focused false
-    opacity 8.00
+    opacity 0.50
     default-floating-position x=10 y=10 relative-to="top-right"
     
     border {
