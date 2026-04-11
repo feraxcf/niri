@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 theme_file="$HOME/.config/niri/theme.kdl"
-[[ -f "$theme_file" ]] || { echo "the theme file does not exist"; exit 1; }
+# [[ -f "$theme_file" ]] || { echo "the theme file does not exist"; exit 1; }
 
 theme=$1 # 0 ligth 1 dark
 [[ -z "$theme" ]] && { 
