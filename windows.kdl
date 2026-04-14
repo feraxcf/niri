@@ -47,6 +47,18 @@ window-rule { // Block out from screencasts.
     match title=".*WhatsApp.*"
     
     block-out-from "screencast"
+    border {
+        on
+        active-color "#ee0000"
+        inactive-color "#000000"
+    }
+}
+
+layer-rule { // Block out from screencasts.
+    match namespace=r#"noctalia-notifications.*"#
+    
+    opacity 0.85
+    block-out-from "screencast"
 }
 
 window-rule {

@@ -26,4 +26,5 @@ binds {
     Mod+Alt+N allow-when-locked=true { spawn-sh "playerctl previous"; }
     Mod+Alt+P allow-when-locked=true { spawn-sh "playerctl next"; }
     
+    Mod+Alt+Shift+R { spawn-sh "qs kill -p /etc/xdg/quickshell/noctalia-shell/shell.qml; qs -c noctalia-shell;"; }
 }
