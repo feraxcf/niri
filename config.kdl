@@ -1,3 +1,6 @@
+// Workspaces
+include "workspaces.kdl"
+
 // base
 include "base.kdl"
 

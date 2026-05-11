@@ -1,0 +1,9 @@
+workspace "chat"
+
+window-rule {
+    match app-id="org.telegram.desktop"
+    match app-id="com.github.IsmaelMartinez.teams_for_linux"
+    match app-id="com.slack.Slack"
+    
+    open-on-workspace "chat"
+}
