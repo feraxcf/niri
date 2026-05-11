@@ -42,9 +42,11 @@ window-rule { // transparent window
 window-rule { // Block out from screencasts.
     match app-id="org.telegram.desktop"
     match app-id="com.github.IsmaelMartinez.teams_for_linux"
+    match app-id="com.slack.Slack"
     match title=".*Bitwarden Password Manager.*"
     match title=".*Microsoft Teams.*"
     match title=".*WhatsApp.*"
+    match title=".*Slack.*"
     
     block-out-from "screencast"
     border {
