@@ -63,6 +63,16 @@ layer-rule { // Block out from screencasts.
     block-out-from "screencast"
 }
 
+layer-rule { // Block out from screencasts.
+    match namespace=r#"noctalia-back.*"#
+    match namespace=r#"noctalia-lau.*"#
+
+    background-effect {
+        xray false
+        blur false
+    }
+}
+
 window-rule {
     match title=".*Extension.*Bitwarden.*"
     
