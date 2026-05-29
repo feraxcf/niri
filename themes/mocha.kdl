@@ -7,7 +7,7 @@ layout {
     background-color "#181825" // mantle
     border {
         on
-        active-color "#f5e0dc" // rosewater
-        inactive-color "#585b70" // surface2
+        active-color "#a6e3a1" // green
+        inactive-color "#cdd6f4" // surface2
     }
 }
