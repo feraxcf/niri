@@ -16,3 +16,7 @@ output "LG Electronics LG FULL HD 0x01010101" {
     }
     
 }
+
+output "Thermotrex Corporation TL142GDXP10-0 0x53455030" { 
+    scale 1.65
+}
