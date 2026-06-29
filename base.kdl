@@ -53,7 +53,7 @@ layout {
     preset-window-heights { proportion 1.0; }
     
     focus-ring { off; } 
-    border { on; width 3; }
+    border { on; width 1; }
     
     // shadow { }
     
