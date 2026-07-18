@@ -49,7 +49,7 @@ window-rule { // Block out from screencasts.
     match title=".*WhatsApp.*"
     match title=".*Slack.*"
     
-    block-out-from "screencast"
+    block-out-from "screen-capture"
     border {
         on
         active-color "#d20f39"
@@ -79,4 +79,8 @@ window-rule {
     
     min-width 460
     max-width 460
+}
+
+window-rule {
+    match app-id="io.github.Kuucheen.PixelKit" title=".olor Picker.*"
 }
