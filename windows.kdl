@@ -2,6 +2,7 @@ window-rule { // Confortable mobile factor
     match app-id="com.github.th_ch.youtube_music"
     match app-id="com.seafile.seafile-applet"
     match app-id="org.telegram.desktop"
+    match app-id="io.github.kukuruzka165.materialgram"
     match app-id="scrcpy"
     default-column-width { fixed 460; }
 }
@@ -43,6 +44,7 @@ window-rule { // transparent window
 window-rule { // Block out from screencasts.
     match app-id="org.telegram.desktop"
     match app-id="com.github.IsmaelMartinez.teams_for_linux"
+    match app-id="io.github.kukuruzka165.materialgram"
     match app-id="com.slack.Slack"
     match title=".*Bitwarden Password Manager.*"
     match title=".*Microsoft Teams.*"

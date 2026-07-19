@@ -9,7 +9,8 @@ binds {
     // Mod+B hotkey-overlay-title="zen" { spawn "flatpak" "run" "app.zen_browser.zen"; }
     Mod+B hotkey-overlay-title="zen" { spawn "zen-browser"; }
     Mod+N hotkey-overlay-title="nautilus" { spawn "nautilus" "-w"; }
-    Mod+C hotkey-overlay-title="telegram" { spawn "flatpak" "run" "org.telegram.desktop"; }
+    // Mod+C hotkey-overlay-title="telegram" { spawn "flatpak" "run" "org.telegram.desktop"; }
+    Mod+C hotkey-overlay-title="telegram" { spawn "materialgram"; }
     Mod+M hotkey-overlay-title="music" { spawn-sh "~/.config/niri/scripts/open-program.sh youtube-music"; }
     
     Shift+XF86AudioRaiseVolume { spawn-sh "~/.config/niri/scripts/volume.sh +"; }
