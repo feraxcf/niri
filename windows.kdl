@@ -3,7 +3,7 @@ window-rule { // Confortable mobile factor
     match app-id="com.seafile.seafile-applet"
     match app-id="org.telegram.desktop"
     match app-id="io.github.kukuruzka165.materialgram"
-    match app-id="scrcpy"
+    
     default-column-width { fixed 460; }
 }
 
@@ -78,9 +78,10 @@ layer-rule { // Block out from screencasts.
 
 window-rule {
     match title=".*Extension.*Bitwarden.*"
+    match app-id="scrcpy"
     
-    min-width 460
-    max-width 460
+    min-width 464
+    max-width 464
 }
 
 window-rule {
