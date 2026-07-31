@@ -10,6 +10,9 @@ include "displays.kdl"
 // windows
 include "windows.kdl"
 
+// windows
+include "recent.kdl"
+
 // events
 include "events.kdl"
 

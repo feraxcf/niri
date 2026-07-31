@@ -37,7 +37,7 @@ layout {
     gaps 8
     center-focused-column "never"
     always-center-single-column
-    // empty-workspace-above-first
+    empty-workspace-above-first
     // default-column-display "tabbed"
     // background-color "#003300"
     
@@ -57,7 +57,9 @@ layout {
     
     // shadow { }
     
-    // insert-hint {  } // Dont know what it is
+    insert-hint {
+        color "#fe640b80"
+    }
     
     struts {
         left 30
