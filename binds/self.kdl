@@ -18,6 +18,7 @@ binds {
     XF86Cut { screenshot; }
     XF86Favorites hotkey-overlay-title="toggle" { spawn "~/.config/niri/scripts/toggle_screen.sh"; }
     
+    Mod+K { spawn-sh "kill -9 $(niri msg focused-window | grep PID | cut -d' ' -f4)"; }
     
     Mod+Alt+K allow-when-locked=true { spawn-sh "playerctl play-pause"; }
     Mod+Alt+L allow-when-locked=true { spawn-sh "playerctl position 10+"; }
