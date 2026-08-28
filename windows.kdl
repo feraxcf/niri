@@ -98,6 +98,7 @@ layer-rule { // Block out from screencasts.
 window-rule {
     match title=".*Extension.*Bitwarden.*"
     match app-id="scrcpy"
+    match app-id="nankill.xyz.glassymusic.mod"
     
     min-width 464
     max-width 464

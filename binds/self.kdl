@@ -4,6 +4,17 @@ binds {
     Mod+Ctrl+Down { move-column-to-workspace-down; } // { move-column-right; }
     Mod+Ctrl+Up   { move-column-to-workspace-up; } // { move-column-left; }
     
+    // Monitors
+    Mod+Alt+Left  { focus-monitor-left; }
+    Mod+Alt+Down  { focus-monitor-down; }
+    Mod+Alt+Up    { focus-monitor-up; }
+    Mod+Alt+Right { focus-monitor-right; }
+    
+    Mod+Alt+Ctrl+Left  { move-column-to-monitor-left; }
+    Mod+Alt+Ctrl+Down  { move-column-to-monitor-down; }
+    Mod+Alt+Ctrl+Up    { move-column-to-monitor-up; }
+    Mod+Alt+Ctrl+Right { move-column-to-monitor-right; }
+    
     Mod+Space hotkey-overlay-title="launcher" { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
     Mod+Z hotkey-overlay-title="zed" { spawn "zed"; }
     // Mod+B hotkey-overlay-title="zen" { spawn "flatpak" "run" "app.zen_browser.zen"; }
@@ -32,4 +43,7 @@ binds {
     // Shift+Print allow-when-locked=true { spawn-sh "pixelkit screen-ruler"; }
     
     Mod+Alt+Shift+R { spawn-sh "qs kill -p /etc/xdg/quickshell/noctalia-shell/shell.qml; qs -c noctalia-shell;"; }
+    
+    Mod+P allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+2%"; }
+    Mod+O allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "2%-"; }
 }
