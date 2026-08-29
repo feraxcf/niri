@@ -1,4 +1,11 @@
 binds {
+    Pause { toggle-overview; }
+    
+    Mod+Left  { focus-column-or-monitor-left; }
+    Mod+Right  { focus-column-or-monitor-right; }
+    
+    // Mod+Braceright  { swap-monitor-left; }
+    
     Mod+Down      { focus-workspace-down; } // { focus-column-right; }
     Mod+Up        { focus-workspace-up; } // { focus-column-left; }
     Mod+Ctrl+Down { move-column-to-workspace-down; } // { move-column-right; }
@@ -15,11 +22,9 @@ binds {
     Mod+Alt+Ctrl+Up    { move-column-to-monitor-up; }
     Mod+Alt+Ctrl+Right { move-column-to-monitor-right; }
     
-    Mod+Space hotkey-overlay-title="launcher" { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
     Mod+Z hotkey-overlay-title="zed" { spawn "zed"; }
-    // Mod+B hotkey-overlay-title="zen" { spawn "flatpak" "run" "app.zen_browser.zen"; }
-    Mod+B hotkey-overlay-title="zen" { spawn "zen-browser"; }
-    Mod+N hotkey-overlay-title="nautilus" { spawn "nautilus" "-w"; }
+    Mod+B hotkey-overlay-title="zen" { spawn-sh " ~/.config/niri/scripts/open-program.sh zen-browser || flatpak run app.zen_browser.zen"; }
+    Mod+N hotkey-overlay-title="nautilus" { spawn-sh "xdg-open ~"; }
     Mod+C hotkey-overlay-title="telegram" { spawn-sh "~/.config/niri/scripts/open-program.sh materialgram || flatpak run org.telegram.desktop"; }
     Mod+M hotkey-overlay-title="music" { spawn-sh "~/.config/niri/scripts/open-program.sh youtube-music"; }
     
@@ -42,8 +47,6 @@ binds {
     Mod+Print allow-when-locked=true { spawn-sh "pixelkit color-picker"; }
     // Shift+Print allow-when-locked=true { spawn-sh "pixelkit screen-ruler"; }
     
-    Mod+Alt+Shift+R { spawn-sh "qs kill -p /etc/xdg/quickshell/noctalia-shell/shell.qml; qs -c noctalia-shell;"; }
-    
-    Mod+P allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+2%"; }
-    Mod+O allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "2%-"; }
+    Mod+Scroll_Lock { spawn-sh "windowinfo=$(niri msg pick-window); ret_val=$(notify-send -t 1500 --action='copytext=Copy to clipboard' 'Picked Window Information:' \"$(echo \"$windowinfo\" | grep 'App ID' | cut -d: -f2 | cut -d'\"' -f2)\"); case $ret_val in 'copytext') wl-copy \"$windowinfo\" ;; esac"; }
+    // Mod+Shift+F { toggle-windowed-fullscreen; }
 }

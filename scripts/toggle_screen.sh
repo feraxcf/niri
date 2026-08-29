@@ -6,12 +6,7 @@ toggle() {
     
     local current=$(brightnessctl g -P)
     
-    [[ $current -eq 0 ]] && {
-        brightnessctl --class=backlight set "$(cat "$dir/brightness")%"
-    } || {
-        echo "$current" > "$dir/brightness"
-        brightnessctl --class=backlight set 0
-    }
+    [[ $current -eq 0 ]] && noctalia msg dpms-off || noctalia msg dpms-on
 }
 
-toggle
+# toggle

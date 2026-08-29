@@ -25,3 +25,4 @@ include "animations.kdl"
 // binds
 include "binds/base.kdl"
 include "binds/self.kdl"
+include "binds/noctalia.kdl"
