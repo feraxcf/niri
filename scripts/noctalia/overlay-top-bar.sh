@@ -2,7 +2,9 @@
 
 toggle_overlay() {
     local noctalia_path="$HOME/.config/noctalia/zbar.top.toml"
-    local current=$(sed -n '2p' "$noctalia_path" | cut -d'"' -f2)
+    local current="top"
+    
+    [[ -f "$noctalia_path" ]] && current=$( sed -n '2p' "$noctalia_path" | cut -d'"' -f2 )
     
     [[ -z "$1" && "$1" == "$current" ]] && return 1;
     [[ "top" == "$current" || "$1" == "overlay" ]] && { 

@@ -45,6 +45,7 @@ binds {
     Mod+Alt+P allow-when-locked=true { spawn-sh "playerctl next"; }
     
     Mod+Print allow-when-locked=true { spawn-sh "pixelkit color-picker"; }
+    Mod+XF86Cut allow-when-locked=true { spawn-sh "pixelkit color-picker"; }
     // Shift+Print allow-when-locked=true { spawn-sh "pixelkit screen-ruler"; }
     
     Mod+Scroll_Lock { spawn-sh "windowinfo=$(niri msg pick-window); ret_val=$(notify-send -t 1500 --action='copytext=Copy to clipboard' 'Picked Window Information:' \"$(echo \"$windowinfo\" | grep 'App ID' | cut -d: -f2 | cut -d'\"' -f2)\"); case $ret_val in 'copytext') wl-copy \"$windowinfo\" ;; esac"; }
