@@ -2,10 +2,8 @@
 prefer-no-csd
 
 // startup commands
-// spawn-at-startup "waybar"
-spawn-at-startup "qs" "-c" "noctalia-shell"
 spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
-spawn-sh-at-startup "sleep 5 && ~/.config/niri/themes/current.sh"
+spawn-sh-at-startup "noctalia && ~/.config/niri/themes/toggle.sh"
 spawn-sh-at-startup "~/.config/niri/scripts/audio.sh"
 
 // paths

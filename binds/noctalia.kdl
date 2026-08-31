@@ -1,10 +1,29 @@
+// spawn-sh-at-startup "~/.config/niri/scripts/noctalia/on-full-focused-screen.sh";
+
 binds {
-    Mod+D hotkey-overlay-title="Launcher" { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
+    Mod+Alt+Shift+R { spawn-sh "pkill -9 noctalia; noctalia;"; }
     
-    Mod+V { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "clipboard"; }
-    Mod+L { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "lockScreen" "lock"; }
-    Mod+Period { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "controlCenter" "toggle"; }
+    XF86MonBrightnessUp           { spawn-sh "noctalia msg brightness-up '*' 0.01"; }
+    XF86MonBrightnessDown         { spawn-sh "noctalia msg brightness-down '*' 0.01"; }
+    Shift+XF86MonBrightnessUp     { spawn-sh "noctalia msg brightness-up '*' 0.1"; }
+    Shift+XF86MonBrightnessDown   { spawn-sh "noctalia msg brightness-down '*' 0.1"; }
+    
+    Mod+P                         { spawn-sh "noctalia msg brightness-up '*' 0.1"; }
+    Mod+O                         { spawn-sh "noctalia msg brightness-down '*' 0.1"; }
+    Mod+XF86AudioRaiseVolume      { spawn-sh "noctalia msg brightness-up '*' 0.01"; }
+    Mod+XF86AudioLowerVolume      { spawn-sh "noctalia msg brightness-down '*' 0.01"; }
+    
+    Mod+D hotkey-overlay-title="Launcher" { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
+
+    Mod+Space hotkey-overlay-title="launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
+    Mod+V { spawn-sh "noctalia msg panel-toggle clipboard"; }
+    Mod+L { spawn-sh "noctalia msg session lock"; }
+    
+    Mod+Period { spawn-sh "noctalia msg panel-toggle control-center"; }
     Mod+Shift+Period { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "emoji"; }
     Mod+Comma { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "settings" "toggle"; }
     Mod+Shift+Comma { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "plugin:unicode" "toggle"; }
+    
+    Mod+Apostrophe { spawn-sh "noctalia msg panel-toggle launcher '/zed '"; }
+    Mod+Escape { spawn-sh "~/.config/niri/scripts/noctalia/overlay-top-bar.sh"; }
 }

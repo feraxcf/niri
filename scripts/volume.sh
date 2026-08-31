@@ -10,6 +10,11 @@ get_node_id() {
 }
 
 set_volume() {
+    local path="$XDG_CONFIG_HOME"
+    [[ -z "$path" ]] && path="$HOME/.config"
+    
+    source "$path/niri/scripts/utils.sh"
+    
     local APP_ID=$(niri msg focused-window | grep 'App ID' | cut -d'"' -f2)
     local NODE_ID=$(get_node_id "$APP_ID")
     local MODE="$1"
@@ -19,7 +24,8 @@ set_volume() {
     [[ "$MODE" == "+" ]] && wpctl set-volume $NODE_ID 0.01+ -l 1.5
     [[ "$MODE" == "-" ]] && wpctl set-volume $NODE_ID 0.01-
     
-    qs -c noctalia-shell ipc call toast send "{\"type\": \"notice\", \"icon\":\"volume\", \"title\": \"$APP_ID\", \"body\": \"$(wpctl get-volume $NODE_ID)\"}"
+    notificate "{\"type\": \"notice\", \"icon\":\"volume\", \"title\": \"$APP_ID\", \"body\": \"$(wpctl get-volume $NODE_ID)\"}"
+    notificate volume $APP_ID notice "$(wpctl get-volume $NODE_ID)"
 }
 
 set_volume "$@"

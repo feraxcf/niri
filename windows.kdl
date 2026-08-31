@@ -3,6 +3,7 @@ window-rule { // Confortable mobile factor
     match app-id="com.seafile.seafile-applet"
     match app-id="org.telegram.desktop"
     match app-id="io.github.kukuruzka165.materialgram"
+    match app-id="wev"
     
     default-column-width { fixed 460; }
 }
@@ -78,6 +79,20 @@ window-rule { // Block out from screencasts.
     }
 }
 
+window-rule { // Draw transparent blured windows.
+    match app-id="wev"
+    
+    opacity 0.0
+    draw-border-with-background false
+    background-effect {
+        xray true
+        blur true
+    }
+    // border { off; }
+}
+
+
+
 layer-rule { // Block out from screencasts.
     match namespace=r#"noctalia-notifications.*"#
     
@@ -86,6 +101,7 @@ layer-rule { // Block out from screencasts.
 }
 
 layer-rule { // Block out from screencasts.
+    match namespace=r#"noctalia-bar-top"#
     match namespace=r#"noctalia-back.*"#
     match namespace=r#"noctalia-lau.*"#
 
@@ -98,9 +114,26 @@ layer-rule { // Block out from screencasts.
 window-rule {
     match title=".*Extension.*Bitwarden.*"
     match app-id="scrcpy"
+    match app-id="nankill.xyz.glassymusic.mod"
     
     min-width 464
     max-width 464
+}
+
+window-rule {
+    match app-id="io.github.Kuucheen.PixelKit" title=".olor Picker.*"
+}
+
+window-rule {
+    match title="Color Picker — PixelKit"
+    match app-id="io.github.Kuucheen.PixelKit"
+    
+    // match app-id="scrcpy"
+    // match app-id="nankill.xyz.glassymusic.mod"
+    open-floating true
+    opacity 0.1
+    // min-width 464
+    // max-width 464
 }
 
 window-rule {
