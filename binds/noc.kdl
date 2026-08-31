@@ -20,9 +20,9 @@ binds {
     Mod+L { spawn-sh "noctalia msg session lock"; }
     
     Mod+Period { spawn-sh "noctalia msg panel-toggle control-center"; }
-    Mod+Shift+Period { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "emoji"; }
-    Mod+Comma { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "settings" "toggle"; }
-    Mod+Shift+Comma { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "plugin:unicode" "toggle"; }
+    // Mod+Shift+Period { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "emoji"; }
+    Mod+Comma { spawn-sh "noctalia msg settings-toggle"; }
+    // Mod+Shift+Comma { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "plugin:unicode" "toggle"; }
     
     Mod+Apostrophe { spawn-sh "noctalia msg panel-toggle launcher '/zed '"; }
     Mod+Escape { spawn-sh "~/.config/niri/scripts/noctalia/overlay-top-bar.sh"; }
