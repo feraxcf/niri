@@ -123,3 +123,19 @@ window-rule {
 window-rule {
     match app-id="io.github.Kuucheen.PixelKit" title=".olor Picker.*"
 }
+
+window-rule {
+    match title="Color Picker — PixelKit"
+    match app-id="io.github.Kuucheen.PixelKit"
+    
+    // match app-id="scrcpy"
+    // match app-id="nankill.xyz.glassymusic.mod"
+    open-floating true
+    opacity 0.1
+    // min-width 464
+    // max-width 464
+}
+
+window-rule {
+    match app-id="io.github.Kuucheen.PixelKit" title=".olor Picker.*"
+}

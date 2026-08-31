@@ -3,10 +3,15 @@
 binds {
     Mod+Alt+Shift+R { spawn-sh "pkill -9 noctalia; noctalia;"; }
     
-    Mod+P                     { spawn-sh "noctalia msg brightness-up '*' 0.1"; }
-    Mod+O                     { spawn-sh "noctalia msg brightness-down '*' 0.1"; }
-    Mod+XF86AudioRaiseVolume  { spawn-sh "noctalia msg brightness-up '*' 0.01"; }
-    Mod+XF86AudioLowerVolume  { spawn-sh "noctalia msg brightness-down '*' 0.01"; }
+    XF86MonBrightnessUp           { spawn-sh "noctalia msg brightness-up '*' 0.01"; }
+    XF86MonBrightnessDown         { spawn-sh "noctalia msg brightness-down '*' 0.01"; }
+    Shift+XF86MonBrightnessUp     { spawn-sh "noctalia msg brightness-up '*' 0.1"; }
+    Shift+XF86MonBrightnessDown   { spawn-sh "noctalia msg brightness-down '*' 0.1"; }
+    
+    Mod+P                         { spawn-sh "noctalia msg brightness-up '*' 0.1"; }
+    Mod+O                         { spawn-sh "noctalia msg brightness-down '*' 0.1"; }
+    Mod+XF86AudioRaiseVolume      { spawn-sh "noctalia msg brightness-up '*' 0.01"; }
+    Mod+XF86AudioLowerVolume      { spawn-sh "noctalia msg brightness-down '*' 0.01"; }
     
     Mod+D hotkey-overlay-title="Launcher" { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
 
