@@ -95,9 +95,15 @@ window-rule { // Draw transparent blured windows.
 
 layer-rule { // Block out from screencasts.
     match namespace=r#"noctalia-notifications.*"#
+    match namespace=r#"noctalia-notification"#
     
-    opacity 0.85
+    opacity 1.0
     block-out-from "screencast"
+
+    background-effect {
+        xray false
+        blur true
+    }
 }
 
 layer-rule { // Block out from screencasts.
