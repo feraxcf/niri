@@ -10,6 +10,7 @@ window-rule { // Confortable mobile factor
 
 window-rule { // full screen apps
     match app-id="zen"
+    match app-id="jetbrains-studio"
     match app-id=r#".*zen_browser.*"#
     match app-id=r#".*zed.*"#
     
