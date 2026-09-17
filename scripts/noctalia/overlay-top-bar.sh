@@ -8,10 +8,10 @@ toggle_overlay() {
     
     [[ -z "$1" && "$1" == "$current" ]] && return 1;
     [[ "top" == "$current" || "$1" == "overlay" ]] && { 
-        niri msg action do-screen-transition --delay-ms 15
+        # niri msg action do-screen-transition --delay-ms 15
         cp "$HOME/.config/niri/scripts/noctalia/templates/bar.top/overlay.toml" "$noctalia_path"
     } || { 
-        niri msg action do-screen-transition --delay-ms 15
+        # niri msg action do-screen-transition --delay-ms 15
         cp "$HOME/.config/niri/scripts/noctalia/templates/bar.top/top.toml" "$noctalia_path"
     }
 }
