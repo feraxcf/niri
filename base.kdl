@@ -62,7 +62,7 @@ layout {
     struts {
         left 30
         right 30
-        top 0
+        top 32 // becouse of noctalia
         bottom 0
     }
 }

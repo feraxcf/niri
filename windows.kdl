@@ -108,7 +108,7 @@ layer-rule { // Block out from screencasts.
 }
 
 layer-rule { // Block out from screencasts.
-    match namespace=r#"noctalia-bar-top"#
+    match namespace=r#"noctalia-bar-top*"#
     match namespace=r#"noctalia-back.*"#
     match namespace=r#"noctalia-lau.*"#
 
