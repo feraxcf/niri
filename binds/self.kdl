@@ -50,4 +50,6 @@ binds {
     
     Mod+Scroll_Lock { spawn-sh "windowinfo=$(niri msg pick-window); ret_val=$(notify-send -t 1500 --action='copytext=Copy to clipboard' 'Picked Window Information:' \"$(echo \"$windowinfo\" | grep 'App ID' | cut -d: -f2 | cut -d'\"' -f2)\"); case $ret_val in 'copytext') wl-copy \"$windowinfo\" ;; esac"; }
     // Mod+Shift+F { toggle-windowed-fullscreen; }
+    Mod+Shift+F { toggle-windowed-fullscreen; }
+    Mod+G { set-window-width "66.6%"; }
 }
