@@ -111,6 +111,7 @@ layer-rule { // Block out from screencasts.
     match namespace=r#"noctalia-bar-*"#
     match namespace=r#"noctalia-back.*"#
     match namespace=r#"noctalia-lau.*"#
+    match namespace=r#"noctalia-osd"#
 
     background-effect {
         xray false
