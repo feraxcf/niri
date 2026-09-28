@@ -99,7 +99,8 @@ layer-rule { // Block out from screencasts.
     match namespace=r#"noctalia-notification"#
     
     opacity 1.0
-    block-out-from "screencast"
+    // block-out-from "screencast"
+    block-out-from "screen-capture"
 
     background-effect {
         xray false
