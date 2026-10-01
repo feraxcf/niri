@@ -72,7 +72,8 @@ window-rule { // Block out from screencasts.
     match title=".*WhatsApp.*"
     match title=".*Slack.*"
     
-    block-out-from "screen-capture"
+    // block-out-from "screen-capture"
+    block-out-from "screencast"
     border {
         on
         active-color "#d20f39"
@@ -99,8 +100,8 @@ layer-rule { // Block out from screencasts.
     match namespace=r#"noctalia-notification"#
     
     opacity 1.0
-    // block-out-from "screencast"
-    block-out-from "screen-capture"
+    block-out-from "screencast"
+    // block-out-from "screen-capture"
 
     background-effect {
         xray false
