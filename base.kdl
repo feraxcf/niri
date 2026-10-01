@@ -1,6 +1,11 @@
 // global preferences
 prefer-no-csd
 
+environment {
+    XCURSOR_THEME "Bibata-Modern-Ice"
+    XCURSOR_SIZE "24"
+}
+
 // startup commands
 spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
 spawn-sh-at-startup "noctalia && ~/.config/niri/themes/toggle.sh"
