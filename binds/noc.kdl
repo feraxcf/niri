@@ -26,4 +26,6 @@ binds {
     
     Mod+Apostrophe { spawn-sh "noctalia msg panel-toggle launcher '/zed '"; }
     Mod+Escape { spawn-sh "~/.config/niri/scripts/noctalia/overlay-top-bar.sh"; }
+    
+    Mod+Insert allow-when-locked=true { spawn-sh "noctalia msg dpms-off"; }
 }
