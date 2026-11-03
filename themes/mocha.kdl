@@ -4,7 +4,8 @@ overview {
 }
 
 layout {
-    background-color "#181825" // mantle
+    // background-color "#181825" // mantle
+    background-color "transparent"
     border {
         on
         active-color "#a6e3a1" // green

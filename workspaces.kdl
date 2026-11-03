@@ -1,4 +1,4 @@
-workspace "chat"
+// workspace "chat"
 
 window-rule {
     match app-id="org.telegram.desktop"
