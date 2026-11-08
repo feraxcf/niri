@@ -94,6 +94,18 @@ window-rule { // Draw transparent blured windows.
     // border { off; }
 }
 
+window-rule { // File picker
+    match app-id="io.github.anuzdhk.Tuck.Portal"
+    
+    opacity 0.85
+    open-floating true
+    draw-border-with-background false
+    
+    background-effect {
+        xray false
+        blur true
+    }
+}
 
 
 layer-rule { // Block out from screencasts.
